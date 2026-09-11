@@ -1,0 +1,13 @@
+interface:
+  display_name: 中文论文降 AIGC
+  short_description: 中文论文逐段改写与数据引文核对，保留原格式并交付修订稿、净稿和对比报告
+  default_prompt: 请用 $academic-aigc-zh 处理我的中文论文，保留原格式和数据引文，控制字数，交付修订批注稿、净稿和 HTML 逐段对比报告。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

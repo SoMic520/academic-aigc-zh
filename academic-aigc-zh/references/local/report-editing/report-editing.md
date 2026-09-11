@@ -1,6 +1,6 @@
 # 从本地检测报告定位原文
 
-本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../../third_party/manifest.json)。许可见 [LICENSE](../../../third_party/report-editing/LICENSE.txt)。本模块不要求联网、不要求用户必须提供 HTML，也不把收到正文后的改写暂停为确认步骤。
+本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../resource-manifest.json)。模块附注见 [NOTICE](NOTICE)。本模块不要求联网、不要求用户必须提供 HTML，也不把收到正文后的改写暂停为确认步骤。
 
 ## 有报告时
 

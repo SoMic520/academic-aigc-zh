@@ -123,10 +123,10 @@ python scripts/scan_style.py --input original.txt --out style-check.json
 
 采用标准 `SKILL.md` 加相对路径资源；不依赖 Codex、Claude Code 固定目录、工具名称或私有接口。
 四个辅助脚本均使用 Python 3 标准库且不联网；`scan_style.py` 从自身位置寻找包内词库，可在任意工作目录调用。`agents/openai.yaml` 是附加显示元数据，不是核心运行依赖。
-导入或复制整个技能目录，保持 `references/`、`assets/`、`scripts/`、`third_party/` 的相对位置；检查目标客户端识别到本文件的 `name`。不能仅凭复制文件声称客户端已安装成功。
+导入或复制整个技能目录，保持 `references/`、`assets/`、`scripts/` 的相对位置；检查目标客户端识别到本文件的 `name`。不能仅凭复制文件声称客户端已安装成功。
 文本改写需要当前助手的语言能力；编辑和渲染复杂 Word/PDF 需要环境已有的文档能力，包内不伪装提供办公软件或真实检测平台。
 
 - 改写时读取：[中文学术改写规则](references/rewrite-rules.md)。
 - 有报告时读取：[检测报告与复测](references/report-workflow.md)。
 - 要审阅交付时读取：[修订批注与逐段对比](references/review-delivery.md)。
-- 全部内置模块、许可证和来源版本：[本地资源索引](references/sources.md)。
+- 全部内置模块、资料说明和来源版本：[本地资源索引](references/sources.md)。

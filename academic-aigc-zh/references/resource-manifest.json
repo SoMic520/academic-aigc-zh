@@ -2,7 +2,7 @@
   "schema_version": 1,
   "resource_edition": "local-2026-09-11",
   "runtime_downloads": false,
-  "description": "五个项目已下载审阅；仅将选用内容修改适配后内置。记录仓库名用于许可溯源，不是运行时访问入口。未打包无关README、安装器、上游完整SKILL及未经验证的检测原理。 本地模块和目录按功能命名，原项目标识保留用于溯源。",
+  "description": "五个项目已下载审阅；仅将选用内容修改适配后内置。记录仓库名用于资源溯源，不是运行时访问入口。未打包无关README、安装器、上游完整SKILL及未经验证的检测原理。 本地模块和目录按功能命名，原项目标识保留用于溯源。",
   "projects": [
     {
       "project": "aigc-reduce",
@@ -11,7 +11,7 @@
       "revision": "3cc20dcc87cc314fcc5333b09b469b839471d219",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/academic-style/LICENSE",
+      "license_file": "references/local/academic-style/NOTICE",
       "license_sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
       "downloaded_inputs": [
         {
@@ -34,15 +34,15 @@
       "bundled_adaptations": [
         {
           "path": "references/local/academic-style/protected-spans.md",
-          "sha256": "567cd2406670f54093728d0ff3efaf77fa9506ff474027ae0dd11779093554b0"
+          "sha256": "d65a5ef249b26d50fd161e914b73aed43837ea1fe649900ae768ca08708a51da"
         },
         {
           "path": "references/local/academic-style/positive-style-academic.md",
-          "sha256": "0b4c48e071e7bbd3e21a5902c5b1a898255de09a664e7b6127f09ced73667f34"
+          "sha256": "09469c9732b0ed47cba47a86af49d6b3ea1fdfa4c624ba5a3ce83fde00a82213"
         },
         {
           "path": "scripts/scan_style.py",
-          "sha256": "778f527057a8e7e7861bfc5b5c941a44154a02f813a90c4b58120024e8e03eec"
+          "sha256": "629c3bc2d7d8f1cc18fd3b1239c4c5f1a98638265817495ca626a58ea8d4de13"
         },
         {
           "path": "assets/style-patterns.json",
@@ -60,7 +60,7 @@
       "revision": "50e11af64eb4817f75b8be7d609b99d7cd80d801",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/paragraph-rewrite/LICENSE",
+      "license_file": "references/local/paragraph-rewrite/NOTICE",
       "license_sha256": "e50afb2c7eedbcae7614d920b451b6800c8aab2367e2bc3faf23cde59dc93ee3",
       "downloaded_inputs": [
         {
@@ -71,7 +71,7 @@
       "bundled_adaptations": [
         {
           "path": "references/local/paragraph-rewrite/paragraph-rewrite.md",
-          "sha256": "c5bd87cf10b34821d92013e18a6354342e632db2699e3441955a70f5d7861b61"
+          "sha256": "5c1895706ef00746509110243ac58b9c4d8cfb841fc55d83cb494c116a3ec9c0"
         }
       ],
       "modifications": "重写为直接执行的逐段流程；删除等待确认、噪声配额、作者经历注入、词汇计分；加入每段及全文最多减少3%的约束。",
@@ -85,7 +85,7 @@
       "revision": "dc47917ab69df9dad2d5bc2d500c45091d2301b9",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/report-editing/LICENSE.txt",
+      "license_file": "references/local/report-editing/NOTICE",
       "license_sha256": "7fea9d790b6fe9a3282455b9e51de87571b863568704c4ede6336dde3b7b0a58",
       "downloaded_inputs": [
         {
@@ -96,7 +96,7 @@
       "bundled_adaptations": [
         {
           "path": "references/local/report-editing/report-editing.md",
-          "sha256": "9b09ca66af516e87e8ad3551b3323fa14ee594332f0d5def88e7b4684e2b2201"
+          "sha256": "8dd3c27480782404757d9524e80f5d21345902d340e0a3bb80af77c9246f696d"
         }
       ],
       "modifications": "保留报告定位工作流，兼容本地多种报告；补入重复文本消歧、版本对应和净稿/修订/HTML共用改文；不强制索取HTML或暂停确认。",
@@ -110,7 +110,7 @@
       "revision": "91f3d394db8419c20d67ebe22a96cf8fee0a404b",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/chinese-style/LICENSE",
+      "license_file": "references/local/chinese-style/NOTICE",
       "license_sha256": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7",
       "downloaded_inputs": [
         {
@@ -121,7 +121,7 @@
       "bundled_adaptations": [
         {
           "path": "references/local/chinese-style/chinese-style.md",
-          "sha256": "78e3987da838667775c067118f8123146e7c2e3969b8b4d985f45a4b80beacb9"
+          "sha256": "7984b291502ddf717a018e1ec0b37e7b8b63991db802430ebc56984817cc010e"
         }
       ],
       "modifications": "限定为中文学术语体；不删真实并列项，不改Word格式，不照抄含新增事实的示例，不使用身份判断和自评分。",
@@ -135,7 +135,7 @@
       "revision": "9862685f575c65a8247f90369951df1b3416e3d6",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/fidelity-review/LICENSE",
+      "license_file": "references/local/fidelity-review/NOTICE",
       "license_sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
       "downloaded_inputs": [
         {
@@ -146,7 +146,7 @@
       "bundled_adaptations": [
         {
           "path": "references/local/fidelity-review/reverse-audit.md",
-          "sha256": "fda9fad60689db5bbe6a4bc9e8492a2c1334c15a9e2b723bdb66cab1a11d6d29"
+          "sha256": "71b2e7cf8013706cb35bce366a4e9f3235e737ebdd36c7730ce86bf5e521f460"
         }
       ],
       "modifications": "提取保真、语气适配和反向审读；增加中文论文限定和中英文摘要对应；不采用通用文案中的压缩、主动语态或装饰清理硬规则。",

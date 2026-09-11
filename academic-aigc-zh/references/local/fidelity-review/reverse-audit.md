@@ -1,6 +1,6 @@
 # 改写后的反向审读
 
-本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../../third_party/manifest.json)。许可见 [LICENSE](../../../third_party/fidelity-review/LICENSE)。适用于中文正文和论文英文摘要。
+本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../resource-manifest.json)。模块附注见 [NOTICE](NOTICE)。适用于中文正文和论文英文摘要。
 
 ## 先查含义
 

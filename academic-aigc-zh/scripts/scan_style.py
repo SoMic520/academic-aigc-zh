@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Offline editorial hints. No AI score, automatic rewriting, or network calls.
 
-Upstream source and adaptation history: third_party/manifest.json.
-License: third_party/academic-style/LICENSE.
+Upstream source and adaptation history: references/resource-manifest.json.
+Module notice: references/local/academic-style/NOTICE.
 """
 import argparse
 import json

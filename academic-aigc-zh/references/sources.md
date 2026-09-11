@@ -23,16 +23,16 @@
 - 不随风格修改标题、字体、加粗、页眉页脚、公式或表格。修订稿与净稿均使用原文档副本，HTML 单独生成。
 - 已有正文就直接完成；本地材料足够时不要求先取得 HTML 报告、不反复请求开始确认。
 
-## 本地许可与溯源
+## 原生模块资料
 
-各模块对应的 MIT 许可证原文随包保留；原项目名称、作者信息和来源版本保留在许可证及来源清单中：
+各模块的附注与资源记录如下：
 
-- [学术表达模块许可证](../third_party/academic-style/LICENSE)
-- [段落改写模块许可证](../third_party/paragraph-rewrite/LICENSE)
-- [报告定位模块许可证](../third_party/report-editing/LICENSE.txt)
-- [中文语体模块许可证](../third_party/chinese-style/LICENSE)
-- [保真复核模块许可证](../third_party/fidelity-review/LICENSE)
+- [学术表达模块附注](local/academic-style/NOTICE)
+- [段落改写模块附注](local/paragraph-rewrite/NOTICE)
+- [报告定位模块附注](local/report-editing/NOTICE)
+- [中文语体模块附注](local/chinese-style/NOTICE)
+- [保真复核模块附注](local/fidelity-review/NOTICE)
 
-[本地来源清单](../third_party/manifest.json) 记录仓库标识、固定版本、下载文件 SHA-256、实际内置文件及适配内容。仓库标识仅用于保留许可溯源，不是任务中的访问步骤。
+[本地来源清单](resource-manifest.json) 记录仓库标识、固定版本、下载文件 SHA-256、实际内置文件及适配内容。仓库标识仅用于资源溯源，不是任务中的访问步骤。
 
 未打包上游完整技能入口、安装器、宣传文档及无关文件。核心规则在本地即可读取，四个辅助脚本无需第三方 Python 包或联网下载；复杂文档读取、编辑与渲染使用当前环境已有能力。实际 AIGC 下降仍以真实复测报告为准。

@@ -1,6 +1,6 @@
 # 中文表达的局部检查
 
-本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../../third_party/manifest.json)。许可见 [LICENSE](../../../third_party/chinese-style/LICENSE)。此处只保留适合正式学术文稿的编辑操作。
+本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../resource-manifest.json)。模块附注见 [NOTICE](NOTICE)。此处只保留适合正式学术文稿的编辑操作。
 
 ## 处理与保留
 

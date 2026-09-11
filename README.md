@@ -24,6 +24,15 @@
   </a>
 </p>
 
+## 视频教程
+
+**WorkBuddy 智能体实操** · 04:31<br />
+技能名称：**中文论文降 AIGC（academic-aigc-zh）**。从技能导入、Word 文稿处理，到逐段对比与修订核对。
+
+https://github.com/user-attachments/assets/d0e4543b-c502-4dec-a7f3-3f90d99650d6
+
+[在 B 站观看](https://www.bilibili.com/video/BV1dBYU6jEsH/) &nbsp; · &nbsp; [下载 WorkBuddy](https://www.workbuddy.cn/) &nbsp; · &nbsp; [下载技能 ZIP](https://github.com/SoMic520/academic-aigc-zh/archive/refs/heads/main.zip)
+
 ## 开始使用
 
 **01　下载并解压**<br />

@@ -1,6 +1,6 @@
 # 改写后的反向审读
 
-本文件由本地下载的 Humanizer 的 SKILL.md 中 How to work、Voice 和 When not to act 等段落修改整理。许可见 [LICENSE](../../../third_party/humanizer/LICENSE)。适用于中文正文和论文英文摘要。
+本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../../third_party/manifest.json)。许可见 [LICENSE](../../../third_party/fidelity-review/LICENSE)。适用于中文正文和论文英文摘要。
 
 ## 先查含义
 

@@ -1,6 +1,6 @@
 # 受保护片段与对应关系
 
-本文件由下载的 aigc-reduce 中同名文件修改整理。许可见 [LICENSE](../../../third_party/aigc-reduce/LICENSE)。版本与改动记录见 [本地清单](../../../third_party/manifest.json)。无需访问原项目。
+本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../../third_party/manifest.json)。许可见 [LICENSE](../../../third_party/academic-style/LICENSE)。版本与改动记录见 [本地清单](../../../third_party/manifest.json)。无需访问原项目。
 
 ## 改写前固定什么
 

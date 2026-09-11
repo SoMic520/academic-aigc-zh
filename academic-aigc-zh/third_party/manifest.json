@@ -2,7 +2,7 @@
   "schema_version": 1,
   "resource_edition": "local-2026-09-11",
   "runtime_downloads": false,
-  "description": "五个项目已下载审阅；仅将选用内容修改适配后内置。记录仓库名用于许可溯源，不是运行时访问入口。未打包无关README、安装器、上游完整SKILL及未经验证的检测原理。",
+  "description": "五个项目已下载审阅；仅将选用内容修改适配后内置。记录仓库名用于许可溯源，不是运行时访问入口。未打包无关README、安装器、上游完整SKILL及未经验证的检测原理。 本地模块和目录按功能命名，原项目标识保留用于溯源。",
   "projects": [
     {
       "project": "aigc-reduce",
@@ -11,7 +11,7 @@
       "revision": "3cc20dcc87cc314fcc5333b09b469b839471d219",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/aigc-reduce/LICENSE",
+      "license_file": "third_party/academic-style/LICENSE",
       "license_sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
       "downloaded_inputs": [
         {
@@ -33,23 +33,25 @@
       ],
       "bundled_adaptations": [
         {
-          "path": "references/local/aigc-reduce/protected-spans.md",
-          "sha256": "e0600209271c4d3638795a2f444dea7afec59aa28669dc55be37bf2084d5f43c"
+          "path": "references/local/academic-style/protected-spans.md",
+          "sha256": "567cd2406670f54093728d0ff3efaf77fa9506ff474027ae0dd11779093554b0"
         },
         {
-          "path": "references/local/aigc-reduce/positive-style-academic.md",
-          "sha256": "08f2c2e3e5194c049bca4e08e7bdcf1712565923db27719d052c025848096507"
+          "path": "references/local/academic-style/positive-style-academic.md",
+          "sha256": "0b4c48e071e7bbd3e21a5902c5b1a898255de09a664e7b6127f09ced73667f34"
         },
         {
           "path": "scripts/scan_style.py",
-          "sha256": "24642f26667f098b776dbf86a69d87c4eaabc7b2370663d40a983ddd96757ffb"
+          "sha256": "778f527057a8e7e7861bfc5b5c941a44154a02f813a90c4b58120024e8e03eec"
         },
         {
           "path": "assets/style-patterns.json",
           "sha256": "f9d6252f635098241fd50882435fee7c4bf4b9139fbe1585ed64d1310dd49438"
         }
       ],
-      "modifications": "删除平台算法归因、风险评分、修改率和句长/标点硬阈值；保留保真与语体规则，扫描器改为只读本地表达提示。"
+      "modifications": "删除平台算法归因、风险评分、修改率和句长/标点硬阈值；保留保真与语体规则，扫描器改为只读本地表达提示。",
+      "module": "academic-style",
+      "display_name": "学术表达"
     },
     {
       "project": "humanizer-zh-academic",
@@ -58,7 +60,7 @@
       "revision": "50e11af64eb4817f75b8be7d609b99d7cd80d801",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/humanizer-zh-academic/LICENSE",
+      "license_file": "third_party/paragraph-rewrite/LICENSE",
       "license_sha256": "e50afb2c7eedbcae7614d920b451b6800c8aab2367e2bc3faf23cde59dc93ee3",
       "downloaded_inputs": [
         {
@@ -68,11 +70,13 @@
       ],
       "bundled_adaptations": [
         {
-          "path": "references/local/humanizer-zh-academic/paragraph-rewrite.md",
-          "sha256": "22474669679445957c7a4c7a3d9a9fc2af0af04694340d432c01f046792a6fa1"
+          "path": "references/local/paragraph-rewrite/paragraph-rewrite.md",
+          "sha256": "c5bd87cf10b34821d92013e18a6354342e632db2699e3441955a70f5d7861b61"
         }
       ],
-      "modifications": "重写为直接执行的逐段流程；删除等待确认、噪声配额、作者经历注入、词汇计分；加入每段及全文最多减少3%的约束。"
+      "modifications": "重写为直接执行的逐段流程；删除等待确认、噪声配额、作者经历注入、词汇计分；加入每段及全文最多减少3%的约束。",
+      "module": "paragraph-rewrite",
+      "display_name": "段落改写"
     },
     {
       "project": "aigc-down-skill",
@@ -81,7 +85,7 @@
       "revision": "dc47917ab69df9dad2d5bc2d500c45091d2301b9",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/aigc-down-skill/LICENSE.txt",
+      "license_file": "third_party/report-editing/LICENSE.txt",
       "license_sha256": "7fea9d790b6fe9a3282455b9e51de87571b863568704c4ede6336dde3b7b0a58",
       "downloaded_inputs": [
         {
@@ -91,11 +95,13 @@
       ],
       "bundled_adaptations": [
         {
-          "path": "references/local/aigc-down-skill/report-editing.md",
-          "sha256": "7acb898ee4e1a5fbd4198a289ce91fce9d9c6b508ce66d3d6ec24a3b349d7f77"
+          "path": "references/local/report-editing/report-editing.md",
+          "sha256": "9b09ca66af516e87e8ad3551b3323fa14ee594332f0d5def88e7b4684e2b2201"
         }
       ],
-      "modifications": "保留报告定位工作流，兼容本地多种报告；补入重复文本消歧、版本对应和净稿/修订/HTML共用改文；不强制索取HTML或暂停确认。"
+      "modifications": "保留报告定位工作流，兼容本地多种报告；补入重复文本消歧、版本对应和净稿/修订/HTML共用改文；不强制索取HTML或暂停确认。",
+      "module": "report-editing",
+      "display_name": "报告定位"
     },
     {
       "project": "humanizer-zh",
@@ -104,7 +110,7 @@
       "revision": "91f3d394db8419c20d67ebe22a96cf8fee0a404b",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/humanizer-zh/LICENSE",
+      "license_file": "third_party/chinese-style/LICENSE",
       "license_sha256": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7",
       "downloaded_inputs": [
         {
@@ -114,11 +120,13 @@
       ],
       "bundled_adaptations": [
         {
-          "path": "references/local/humanizer-zh/chinese-style.md",
-          "sha256": "37fadd0fb304d658769b98cda149cce37d2306f8fb818deb10796a2213cab67b"
+          "path": "references/local/chinese-style/chinese-style.md",
+          "sha256": "78e3987da838667775c067118f8123146e7c2e3969b8b4d985f45a4b80beacb9"
         }
       ],
-      "modifications": "限定为中文学术语体；不删真实并列项，不改Word格式，不照抄含新增事实的示例，不使用身份判断和自评分。"
+      "modifications": "限定为中文学术语体；不删真实并列项，不改Word格式，不照抄含新增事实的示例，不使用身份判断和自评分。",
+      "module": "chinese-style",
+      "display_name": "中文语体"
     },
     {
       "project": "humanizer",
@@ -127,7 +135,7 @@
       "revision": "9862685f575c65a8247f90369951df1b3416e3d6",
       "downloaded_on": "2026-09-11",
       "license": "MIT",
-      "license_file": "third_party/humanizer/LICENSE",
+      "license_file": "third_party/fidelity-review/LICENSE",
       "license_sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
       "downloaded_inputs": [
         {
@@ -137,11 +145,13 @@
       ],
       "bundled_adaptations": [
         {
-          "path": "references/local/humanizer/reverse-audit.md",
-          "sha256": "791b2adee1bc646186ee74041b01958c8b45423e3fa578419246e8e7f4d57791"
+          "path": "references/local/fidelity-review/reverse-audit.md",
+          "sha256": "fda9fad60689db5bbe6a4bc9e8492a2c1334c15a9e2b723bdb66cab1a11d6d29"
         }
       ],
-      "modifications": "提取保真、语气适配和反向审读；增加中文论文限定和中英文摘要对应；不采用通用文案中的压缩、主动语态或装饰清理硬规则。"
+      "modifications": "提取保真、语气适配和反向审读；增加中文论文限定和中英文摘要对应；不采用通用文案中的压缩、主动语态或装饰清理硬规则。",
+      "module": "fidelity-review",
+      "display_name": "保真复核"
     }
   ]
 }

@@ -1,16 +1,16 @@
 # 本地资源索引与优化说明
 
-资源版次：local-2026-09-11。五个项目的选用文件已下载、审阅并修改适配；执行时直接读取下列包内文件，无需打开网站，也不需要安装其他技能。
+资源版次：local-2026-09-11。五类功能模块已根据选用的上游内容修改适配；执行时直接读取下列包内文件，无需打开网站，也不需要安装其他技能。
 
 ## 内置文件
 
-| 本地来源 | 实际采用的文件 | 执行用途 |
+| 功能模块 | 实际采用的文件 | 执行用途 |
 |---|---|---|
-| aigc-reduce | [受保护片段](local/aigc-reduce/protected-spans.md)、[书面表达](local/aigc-reduce/positive-style-academic.md) | 固定事实、对应关系与格式，约束学术语体 |
-| humanizer-zh-academic | [逐段重组](local/humanizer-zh-academic/paragraph-rewrite.md) | 按段落功能重组句法，控制每段和全文篇幅 |
-| aigc-down-skill | [报告定位](local/aigc-down-skill/report-editing.md) | 从本地报告映射到原段，衔接复测与审阅交付 |
-| Humanizer-zh | [中文局部检查](local/humanizer-zh/chinese-style.md) | 处理冗余、泛化评价、模糊归因与聊天残留 |
-| Humanizer | [反向审读](local/humanizer/reverse-audit.md) | 对照主张、术语、数值、引文与限定，检查改写副作用 |
+| 学术表达 | [受保护片段](local/academic-style/protected-spans.md)、[书面表达](local/academic-style/positive-style-academic.md) | 固定事实、对应关系与格式，约束学术语体 |
+| 段落改写 | [逐段重组](local/paragraph-rewrite/paragraph-rewrite.md) | 按段落功能重组句法，控制每段和全文篇幅 |
+| 报告定位 | [报告定位](local/report-editing/report-editing.md) | 从本地报告映射到原段，衔接复测与审阅交付 |
+| 中文语体 | [中文局部检查](local/chinese-style/chinese-style.md) | 处理冗余、泛化评价、模糊归因与聊天残留 |
+| 保真复核 | [反向审读](local/fidelity-review/reverse-audit.md) | 对照主张、术语、数值、引文与限定，检查改写副作用 |
 | 本地适配程序 | [表达提示脚本](../scripts/scan_style.py)、[本地词库](../assets/style-patterns.json) | 输出可定位的人工审阅提示，不计算 AI 分数 |
 | 本技能配套文件 | [完整段落示例](../assets/rewrite-examples.json)、[正文核对](../scripts/check_revision.py)、[报告比较](../scripts/compare_reports.py)、[HTML 生成器](../scripts/render_review_report.py) | 核对篇幅与部分受保护内容，比较真实报告，生成离线对比 HTML |
 
@@ -25,13 +25,13 @@
 
 ## 本地许可与溯源
 
-各项目 MIT 许可证原文随包保留：
+各模块对应的 MIT 许可证原文随包保留；原项目名称、作者信息和来源版本保留在许可证及来源清单中：
 
-- [aigc-reduce 许可证](../third_party/aigc-reduce/LICENSE)
-- [humanizer-zh-academic 许可证](../third_party/humanizer-zh-academic/LICENSE)
-- [aigc-down-skill 许可证](../third_party/aigc-down-skill/LICENSE.txt)
-- [Humanizer-zh 许可证](../third_party/humanizer-zh/LICENSE)
-- [Humanizer 许可证](../third_party/humanizer/LICENSE)
+- [学术表达模块许可证](../third_party/academic-style/LICENSE)
+- [段落改写模块许可证](../third_party/paragraph-rewrite/LICENSE)
+- [报告定位模块许可证](../third_party/report-editing/LICENSE.txt)
+- [中文语体模块许可证](../third_party/chinese-style/LICENSE)
+- [保真复核模块许可证](../third_party/fidelity-review/LICENSE)
 
 [本地来源清单](../third_party/manifest.json) 记录仓库标识、固定版本、下载文件 SHA-256、实际内置文件及适配内容。仓库标识仅用于保留许可溯源，不是任务中的访问步骤。
 

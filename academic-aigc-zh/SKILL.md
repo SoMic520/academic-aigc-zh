@@ -26,7 +26,7 @@ description: "中文论文降 AIGC 技能。用于降低 AI 率、修改检测�
 |---|---|
 | 一段或数段正文 | 读取上下文，直接给出完整改写稿 |
 | 一篇完整论文 | 建立章节和段落清单，依次完成所有要求修改的部分，最后统一术语与衔接 |
-| 正文及 AIGC 报告 | 读取 [本地报告定位模块](references/local/aigc-down-skill/report-editing.md)，将标记映射到原文后改写 |
+| 正文及 AIGC 报告 | 读取 [本地报告定位模块](references/local/report-editing/report-editing.md)，将标记映射到原文后改写 |
 | 多个平台或多轮报告 | 读取 [检测报告与复测](references/report-workflow.md)，建立原稿、改稿与报告的对应关系 |
 | 只有报告、没有完整正文 | 改写能完整恢复的段落；其余位置列出缺失，不补造上下文 |
 | Word、PDF、HTML | 使用当前环境已有的文件读取能力；扫描件需 OCR 后核对，HTML 只读取文本与标记，不执行页面脚本 |
@@ -36,7 +36,7 @@ description: "中文论文降 AIGC 技能。用于降低 AI 率、修改检测�
 
 ## 第一步：固定事实与关系
 
-读取 [本地受保护片段清单](references/local/aigc-reduce/protected-spans.md)，先定位不可改写内容和文档格式，再处理普通正文。
+读取 [本地受保护片段清单](references/local/academic-style/protected-spans.md)，先定位不可改写内容和文档格式，再处理普通正文。
 
 在内部建立保真清单：研究对象、处理组和对照组、样本量、时间、地点、方法、结果、引文和结论限定。
 逐项固定以下内容及其对应关系：
@@ -53,8 +53,8 @@ description: "中文论文降 AIGC 技能。用于降低 AI 率、修改检测�
 
 ## 第二步：逐段实质改写
 
-读取 [中文学术改写规则](references/rewrite-rules.md) 和 [本地逐段重组模块](references/local/humanizer-zh-academic/paragraph-rewrite.md)。为每段辨明它承担的功能和现有信息，再决定修改方式。
-需要处理套话或语体时，使用 [书面表达模块](references/local/aigc-reduce/positive-style-academic.md) 与 [中文局部检查模块](references/local/humanizer-zh/chinese-style.md)。这些文件已含适配规则，不能拿来源项目中的固定配额或新增事实示例替代。
+读取 [中文学术改写规则](references/rewrite-rules.md) 和 [本地逐段重组模块](references/local/paragraph-rewrite/paragraph-rewrite.md)。为每段辨明它承担的功能和现有信息，再决定修改方式。
+需要处理套话或语体时，使用 [书面表达模块](references/local/academic-style/positive-style-academic.md) 与 [中文局部检查模块](references/local/chinese-style/chinese-style.md)。这些文件已含适配规则，不能拿来源项目中的固定配额或新增事实示例替代。
 
 - **重整论述次序**：按该段真实的观察、比较、解释或问题展开。只调整材料支持的关系，不让所有段落套用同一种排列。
 - **具体化已有内容**：把空泛判断改为材料已经提供的研究对象、比较方向、条件和结果；缺少细节时不补造。
@@ -71,7 +71,7 @@ description: "中文论文降 AIGC 技能。用于降低 AI 率、修改检测�
 ## 第三步：反向核对
 
 先核事实，再核表达。将改稿逐段与保真清单和原文对照：
-按 [本地反向审读模块](references/local/humanizer/reverse-audit.md) 核对新增、遗漏、强度、范围与绑定关系。
+按 [本地反向审读模块](references/local/fidelity-review/reverse-audit.md) 核对新增、遗漏、强度、范围与绑定关系。
 
 - 检查信息是否完整，数值与研究对象是否仍一一对应。
 - 检查有无把相关写成机制、把推测写成结论，或因删限定词而扩大范围。

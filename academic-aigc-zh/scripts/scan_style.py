@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Offline editorial hints. No AI score, automatic rewriting, or network calls.
 
-Adapted from aigc-reduce/scripts/aigc_scan.py; see
-third_party/aigc-reduce/LICENSE and third_party/manifest.json.
+Upstream source and adaptation history: third_party/manifest.json.
+License: third_party/academic-style/LICENSE.
 """
 import argparse
 import json

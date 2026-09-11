@@ -1,6 +1,6 @@
 # 逐段组织中文学术论述
 
-本文件由本地下载的 humanizer-zh-academic 的 SKILL.md 修改整理。许可见 [LICENSE](../../../third_party/humanizer-zh-academic/LICENSE)。本模块直接用于改写，不要求先出识别报告再等用户确认。
+本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../../third_party/manifest.json)。许可见 [LICENSE](../../../third_party/paragraph-rewrite/LICENSE)。本模块直接用于改写，不要求先出识别报告再等用户确认。
 
 ## 每段执行顺序
 

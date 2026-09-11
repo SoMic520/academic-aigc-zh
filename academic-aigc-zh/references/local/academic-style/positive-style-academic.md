@@ -1,6 +1,6 @@
 # 中文论文的书面表达
 
-本文件由下载的 aigc-reduce 的 positive-style-academic.md 与 ai-patterns.md 修改整理。许可见 [LICENSE](../../../third_party/aigc-reduce/LICENSE)。规则用于编辑判断，不用于预测检测结果。
+本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../../third_party/manifest.json)。许可见 [LICENSE](../../../third_party/academic-style/LICENSE)。规则用于编辑判断，不用于预测检测结果。
 
 ## 具体操作
 

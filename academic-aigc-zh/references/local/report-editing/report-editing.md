@@ -1,6 +1,6 @@
 # 从本地检测报告定位原文
 
-本文件由本地下载的 aigc-down-skill 的 SKILL.md 中报告处理流程修改整理。许可见 [LICENSE](../../../third_party/aigc-down-skill/LICENSE.txt)。本模块不要求联网、不要求用户必须提供 HTML，也不把收到正文后的改写暂停为确认步骤。
+本模块基于上游内容修改适配，来源及修改记录见 [来源清单](../../../third_party/manifest.json)。许可见 [LICENSE](../../../third_party/report-editing/LICENSE.txt)。本模块不要求联网、不要求用户必须提供 HTML，也不把收到正文后的改写暂停为确认步骤。
 
 ## 有报告时
 
